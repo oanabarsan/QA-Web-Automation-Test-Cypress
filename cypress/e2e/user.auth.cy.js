@@ -45,4 +45,16 @@ describe("Auth user test suite", () => {
       "be.visible"
     );
   });
+
+
+  it("Recover password", () => {
+    cy.get("#forms").click();
+    cy.get("#recover-password").click();
+    cy.get("#email").type("admin@admin.com");
+    cy.get("button").contains("Recover Password").click();
+    cy.get("#message").should("be.visible");
+    cy.contains(
+      "An email with the new password has been sent to admin@admin.com. Please verify your inbox!"
+    ).should("be.visible");
+  });
 });
