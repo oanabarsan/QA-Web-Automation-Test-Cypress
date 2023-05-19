@@ -5,7 +5,7 @@ describe("File upload test suites", () => {
     cy.visit("https://qa-practice.netlify.app");
   });
 
-  it.only("File upload test", () => {
+  it("File upload test", () => {
     const fileName = "dog.jpg";
 
     cy.get("#file-upload-item").click();
