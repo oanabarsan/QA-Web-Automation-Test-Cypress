@@ -1,14 +1,14 @@
 /// <reference types = "cypress" />
 
-describe("File upload test suites", () => {
-  beforeEach(() => {
+describe("Loader page test", () => {
+  before(() => {
     cy.visit("https://qa-practice.netlify.app");
-    cy.get("#pagination").click();
   });
 
   it("Loader page test", () => {
   
     cy.get("a[href='loader.html']").click();
+    cy.wait(3000);
     cy.get('#myDiv>h2').contains(`Tada!`).should(
       "be.visible"
     );

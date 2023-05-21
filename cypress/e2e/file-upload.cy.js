@@ -1,7 +1,7 @@
 /// <reference types = "cypress" />
 
 describe("File upload test suites", () => {
-  beforeEach(() => {
+  before(() => {
     cy.visit("https://qa-practice.netlify.app");
   });
 
