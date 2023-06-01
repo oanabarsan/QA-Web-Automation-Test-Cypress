@@ -1,6 +1,6 @@
 # QA-Web-Automation-Test-Cypress
 
-Basic Cypress automation tests for: [https://magento.softwaretestingboard.com/ ](https://qa-practice.netlify.app/)
+Basic Cypress automation tests for:(https://qa-practice.netlify.app/)
 
 <span align="center">
 
